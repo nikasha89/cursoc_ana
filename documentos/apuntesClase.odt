@@ -1,0 +1,1 @@
+Las diferencia entre las "" y <> dentro de un include en los programas en C significa que las <> lo busca en la librería del sistema, y las comillas no.

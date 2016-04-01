@@ -1,1 +1,8 @@
-Las diferencia entre las "" y <> dentro de un include en los programas en C significa que las <> lo busca en la librería del sistema, y las comillas no.
+Las diferencia entre las "" y <> dentro de un include en los programas en C significa que las <>
+lo busca en la librería del sistema, y las comillas no.
+
+sudo apt-get install dwarves
+//Añade la flag -g para que nos devuelva más información acerca del programa.
+gcc -g person.c -o person
+gcc archivo.c -o ejecutable
+pahole person

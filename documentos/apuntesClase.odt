@@ -6,3 +6,5 @@ sudo apt-get install dwarves
 gcc -g person.c -o person
 gcc archivo.c -o ejecutable
 pahole person
+const struct S *s --> Nos devuelve una estructura tipo S la cual sólo puede ser leida pero no modificada, tanto dentro de la función
+referida como dentro de las funciones que son llamadas por ésta.

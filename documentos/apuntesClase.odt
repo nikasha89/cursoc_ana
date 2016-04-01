@@ -8,3 +8,4 @@ gcc archivo.c -o ejecutable
 pahole person
 const struct S *s --> Nos devuelve una estructura tipo S la cual sólo puede ser leida pero no modificada, tanto dentro de la función
 referida como dentro de las funciones que son llamadas por ésta.
+GOLLY --> Juego que simula el juego de la vida (proyecto que haremos)

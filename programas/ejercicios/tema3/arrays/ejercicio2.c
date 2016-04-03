@@ -19,15 +19,23 @@ printf("Elemento %d valor= %d\n",j,array[j]);
 
 //Cambiar Elemento i por el i+1 (y el último por el primero):
 printf("\nCambiar Elemento i por el i+1 (y el último por el primero)\n");
-int intercambio;
-for(int k=TAM_ARRAY-1;k>=0;k--){
-if(k!=0){
- printf("array[k-1]= %d\n",array[k-1]);
- intercambio=array[k-1];
- array[k-1]=array[k];
-}else{
+int intercambio=array[TAM_ARRAY-1];
+for(int k=0;k<TAM_ARRAY;k++){
+ int muleta=array[k];
  array[k]=intercambio;
+ intercambio=muleta;
+ printf("array[%d]= %d\n",k,array[k]);
 }
+
+//Cambiar el elemento i por el i-1 (y el primero por el último):
+int cambio;
+cambio=array[TAM_ARRAY-1];
+printf("\nCambiar el elemento i por el i-1 (y el primero por el último)\n");
+for(int l=0;l<TAM_ARRAY;l++){
+int muleta = array[l];
+array[l]=cambio;
+cambio=muleta;
+printf("Elemento %d valor %d \n",l,array[l]);
 }
 
 }

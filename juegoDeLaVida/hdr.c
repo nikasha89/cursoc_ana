@@ -8,8 +8,8 @@ enum estado_celula{
 	MUERTA
 } EstadoCelula;
 
-struct Celula{
-	EstadoCelula estado;
+struct celula{
+	EstadoCelula estado = MUERTA;
 } Celula;
 
 struct tablero{
@@ -19,5 +19,6 @@ struct tablero{
 } Tablero;
 
 int menuInicio();
-void iterar(Tablero t);
-void imprimeTablero(Tablero t);
+void iterarTablero(Tablero **t);
+void imprimeTablero(Tablero **t);
+void inicializarTablero(Tablero **t);

@@ -17,8 +17,11 @@ struct celula{
 } Celula;
 
 struct coordenadas{
-	int x;
-	int y;
+	/* Aunque sean de tipo int, lo declararemos como unsigned char
+	de esta forma ocupa menos espacio en memoria
+	*/
+	unsigned char x; 
+	unsigned char y;
 } Coordenadas;
 
 struct tablero{

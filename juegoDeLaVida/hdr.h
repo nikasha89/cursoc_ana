@@ -34,6 +34,6 @@ struct tablero{
 } Tablero;
 
 int menuInicio();
-void iterarTablero(struct tablero **t);
-void imprimeTablero(struct tablero **t);
-void inicializarTablero(struct tablero **t);
+void iterarTablero(struct tablero *t);
+void imprimeTablero(struct tablero *t);
+void inicializarTablero(struct tablero *t);

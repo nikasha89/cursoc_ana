@@ -1,1 +1,15 @@
+<<<<<<< HEAD
 Las diferencia entre las "" y <> dentro de un include en los programas en C significa que las <> lo busca en la librería del sistema, y las comillas no.
+=======
+Las diferencia entre las "" y <> dentro de un include en los programas en C significa que las <>
+lo busca en la librería del sistema, y las comillas no.
+
+sudo apt-get install dwarves
+//Añade la flag -g para que nos devuelva más información acerca del programa.
+gcc -g person.c -o person
+gcc archivo.c -o ejecutable
+pahole person
+const struct S *s --> Nos devuelve una estructura tipo S la cual sólo puede ser leida pero no modificada, tanto dentro de la función
+referida como dentro de las funciones que son llamadas por ésta.
+GOLLY --> Juego que simula el juego de la vida (proyecto que haremos)
+>>>>>>> 178e3f7258a19e495b741d1b2a09e7925bb1b56d

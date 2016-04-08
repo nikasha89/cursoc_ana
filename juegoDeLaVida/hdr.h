@@ -25,7 +25,6 @@ struct coordenadas{
 } Coordenadas;
 
 struct tablero{
-	struct celula tablero[TAM_ARRAY][TAM_ARRAY];
 	int iteracion=0;
 	struct celula tablero_inicial[TAM_ARRAY][TAM_ARRAY];
 	struct coordenadas arrayCelulasVivas[TAM_ARRAY*TAM_ARRAY];
@@ -37,3 +36,4 @@ int menuInicio();
 void iterarTablero(struct tablero *t);
 void imprimeTablero(struct tablero *t);
 void inicializarTablero(struct tablero *t);
+void analizarTablero(struct tablero *t);

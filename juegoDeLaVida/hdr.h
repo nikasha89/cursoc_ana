@@ -12,6 +12,7 @@ enum estado_celula{
 	MUERTA
 } EstadoCelula;
 
+/* Inicializamos célula con el estado MUERTA por defecto */
 struct celula{
 	enum estado_celula estado = MUERTA;
 } Celula;
@@ -28,8 +29,11 @@ struct tablero{
 	int iteracion=0;
 	struct celula tablero_inicial[TAM_ARRAY][TAM_ARRAY];
 	struct coordenadas arrayCelulasVivas[TAM_ARRAY*TAM_ARRAY];
+	int indexVivas;
 	struct coordenadas arrayCelulasNacen[TAM_ARRAY*TAM_ARRAY];
+	int indexNacidas;
 	struct coordenadas arrayCelulasMueren[TAM_ARRAY*TAM_ARRAY];
+	int indexMuertas;
 } Tablero;
 
 int menuInicio();
@@ -37,6 +41,9 @@ void iterarTablero(struct tablero *t);
 void imprimeTablero(struct tablero *t);
 void inicializarTablero(struct tablero *t);
 void analizarTablero(struct tablero *t);
-bool estaVacio(struct coordenadas *array);
+//Comprueba si un array está vacío.
+int estaVacio(struct coordenadas *array);
+//Comprueba si un array está vacío, y si no lo está guarda su última posición llena.
+bool estaVacio(struct tablero *t, enum estado_celula opcion);
 void addCelulas(struct tablero *t);
 void removeCelulas(struct tablero *t);

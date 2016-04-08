@@ -38,4 +38,5 @@ void imprimeTablero(struct tablero *t);
 void inicializarTablero(struct tablero *t);
 void analizarTablero(struct tablero *t);
 bool estaVacio(struct coordenadas *array);
-
+void addCelulas(struct tablero *t);
+void removeCelulas(struct tablero *t);

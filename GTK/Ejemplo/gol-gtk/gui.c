@@ -117,9 +117,7 @@ static gboolean draw_cb(GtkWidget *widget, cairo_t *cr, struct gui *g)
 	/* Clear screen */
 	cairo_set_source_rgb(cr, 0, 0, 0);
 	cairo_paint(cr);
-
-	
-
+		
 	/* TODO
 	 * Dibuja el mundo sabiendo que el codigo de abajo dibuja un rectangulo
 	 * blanco en las coordenadas (2, 3) de 5x4 pixeles de tamanyo
@@ -161,6 +159,7 @@ static void pause_cb(GtkWidget *widget, struct gui *g)
 static gboolean mouse_btn_cb(GtkWidget *widget, GdkEventButton *e,
 			     struct gui *g)
 {
+	
 	/* TODO
 	 * e->x y e->y contienen las coordenadas de donde se ha hecho click con
 	 * el ratón. Pista: las coordenadas del mundo no son las mismas que las
